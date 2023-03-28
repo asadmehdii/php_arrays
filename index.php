@@ -10,9 +10,23 @@
 
 <body>
     <?php  
-    
-    
-    
+    $multiDimensionalArray=array(
+        array("name"=>"asad","age"=>23,"location"=>"Lahore"),
+        array("name"=>"ali","age"=>24,"location"=>"ISM"),
+
+        array("name"=>"Irfan","age"=>25,"location"=>"Karachi"),
+        array("name"=>"Usman","age"=>26,"location"=>"FSD"),
+
+
+        
+    );
+    foreach($multiDimensionalArray as $row){
+        echo "---------------------\n";
+        foreach($row as $key => $value) {
+            echo $key . ":\n ";
+            var_dump($value);
+        }
+    }
     
     
     ?>
