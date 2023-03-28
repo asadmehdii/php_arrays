@@ -21,10 +21,10 @@
         
     );
     foreach($multiDimensionalArray as $row){
-        echo "---------------------\n";
+        echo "----------------------------------\n";
         foreach($row as $key => $value) {
-            echo $key . ":\n ";
-            var_dump($value);
+            echo $key . ":\n " . $value . "\n";
+
         }
     }
     
